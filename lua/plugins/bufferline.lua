@@ -5,7 +5,7 @@ return {
     sidebar = {
       filetype = "neo-tree",
       components = {{
-        text = " Neotree Outline"
+        text = "File Explorer"
       }}
     }
   }

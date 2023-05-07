@@ -15,7 +15,8 @@ return {
     }
   },
   keys = {
-    { "<leader>fe", "<cmd>Neotree float<cr>", desc = "Open file explorer." },
-    { "<leader>lo", "<cmd>Neotree document_symbols<cr>", desc = "Toggle code outline window." },
+    { "<leader>fe", "<cmd>Neotree<cr>", desc = "Open file explorer." },
+    { "<leader>lo", "<cmd>Neotree float document_symbols<cr>", desc = "Toggle code outline window." },
+    { "<leader>O", "<cmd>Neotree focus<cr>", desc = "Focus file explorer." }
   }
 }

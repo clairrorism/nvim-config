@@ -61,7 +61,6 @@ return {
       { "<leader>lt", ts.lsp_type_definitions, desc = "Go to definition of the type of the item under cursor." },
       { "<leader>li", ts.lsp_implementations, desc = "Go to implementation(s) of item under cursor." },
       { "<leader>lr", ts.lsp_references, desc = "List references to item under cursor." },
-      { "<leader>O", "<cmd>Neotree focus<cr>", desc = "Focus code outline window." }
     }
   end,
   priority = 9,
