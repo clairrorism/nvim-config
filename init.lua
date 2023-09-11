@@ -78,6 +78,9 @@ vim.api.nvim_create_autocmd("BufEnter", {
   end,
 })
 
+vim.keymap.set("n", "<C-Right>", "<Cmd>bn<CR>", {silent = true})
+vim.keymap.set("n", "<C-Left>", "<Cmd>bp<CR>", {silent = true})
+
 require("lazy").setup({
   {
     "folke/tokyonight.nvim",
@@ -158,6 +161,9 @@ require("lazy").setup({
   {
     "nvim-treesitter/nvim-treesitter",
     build = ":TSUpdate",
+    dependencies = {
+      "windwp/nvim-ts-autotag"
+    },
     config = function()
       local configs = require("nvim-treesitter.configs")
 
@@ -181,6 +187,7 @@ require("lazy").setup({
         sync_install = false,
         highlight = { enable = true },
         indent = { enable = true },
+        autotag = { enable = true },
       })
     end,
   },
@@ -329,9 +336,9 @@ require("lazy").setup({
   },
   {
     "nvim-telescope/telescope.nvim",
-    lazy = true,
     tag = "0.1.2",
     dependencies = { "nvim-lua/plenary.nvim" },
+    lazy = false,
     keys = function()
       local good, ts = pcall(require, "telescope.builtin")
       if good then
@@ -477,4 +484,5 @@ require("lazy").setup({
       "rcarriga/nvim-notify",
     },
   },
+
 })
