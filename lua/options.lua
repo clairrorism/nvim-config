@@ -1,0 +1,39 @@
+local g = vim.g
+local o = vim.opt
+
+o.compatible = false
+o.hidden = true
+o.scrolloff = 10
+o.sidescrolloff = 8
+o.autowrite = true
+o.clipboard = "unnamedplus"
+o.completeopt = "menu,menuone,noselect"
+o.confirm = true
+o.expandtab = true
+o.laststatus = 0
+o.mouse = "a"
+o.number = true
+o.relativenumber = true
+o.termguicolors = true
+o.ignorecase = true
+o.smartcase = true
+o.cursorline = true
+o.conceallevel = 3
+o.list = true
+o.tabstop = 4
+o.softtabstop = -1
+o.shiftwidth = 0
+o.shiftround = true
+o.smartindent = true
+o.spelllang = { "en" }
+o.signcolumn = "yes"
+o.linebreak = true
+o.wildmode = "longest:full,full"
+o.wrap = false
+o.listchars:append("eol:↴")
+o.swapfile = false
+o.timeout = true
+o.timeoutlen = 400
+
+vim.g.maplocalleader = " "
+vim.g.mapleader = " "
